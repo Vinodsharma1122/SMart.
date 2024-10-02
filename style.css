@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+header {
+    padding: 2vh;
+    background-color: #173334;
+    color: #fdfcfa;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header button {
+    cursor: pointer;
+    color: #173334;
+    background-color: #f6f5f4;
+    padding: 0.5vw;
+    border: none;
+    font-size: 1vw;
+    border-radius: 0.25vw;
+    filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.318));
+    transition-duration: 0.4s;
+    transition-property: background-color, color;
+}
+
+header button a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: #173334;
+}
+
+header button:hover {
+    background-color: white;
+    color: black;
+}
+
+main .first {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdfdfc;
+    color: #173334;
+}
+
+main .op {
+    padding-top: 10vh;
+    width: 30vw;
+    font-size: 2.5vw;
+}
+
+main .insidefirst {
+    width: 30vw;
+    margin-right: 10vw;
+}
+
+main button {
+    border: none;
+    border-radius: 0.25vw;
+    background-color: #173334;
+    color: #fbfaf6;
+    padding: 1vw;
+    font-size: 1.5vw;
+    transition-duration: 0.5s;
+    transition-property: background-color, color;
+}
+
+main button:hover,
+main button a:hover {
+    background-color: white;
+    color: #173334;
+}
+
+main .insidefirst {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+main button a {
+    font-size: 1.25vw;
+    background-color: transparent;
+    color: #fbfbf9;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: ubuntu;
+    font-size: 2.5vw;
+}
+
+main .second {
+    padding: 5vh;
+    font-size: 1.25vw;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f6f6;
+    color: #d4d1ca;
+}
+
+.slider {
+    margin-left: 25vw;
+    padding: 4vw;
+    width: 30vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.slides p{
+    color: #173334;
+}
+
+.slides::-webkit-scrollbar {
+    padding-top: 3vh;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 0.25vw;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 30vw;
+    height: 15vw;
+    background: #d4d1ca;
+    border-radius: 0.25vw;
+    border: none;
+    transform-origin: center center;
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider a {
+    display: inline-flex;
+    flex-direction: row;
+    width: 1vw;
+    height: 1vw;
+    background: #191918;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
